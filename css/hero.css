@@ -1700,7 +1700,7 @@ textarea.form-control {
     right: 0;
     top: 85px;
     width: 100%;
-    z-index: 3;
+    z-index: 999;
 }
 .navbar:not(.navbar-transparent) .alert {
     top: 70px;
@@ -5320,6 +5320,7 @@ textarea.form-control {
         font-weight: 600;
         font-size: 12px;
         line-height: 1.5em;
+        
         padding: 15px 0;
     }
     .navbar-collapse .navbar-nav > .nav-item > .nav-link:hover,
@@ -5384,6 +5385,7 @@ textarea.form-control {
 
     .fixed-top .navbar-collapse {
         background-color: #ff8f5e;
+        height: 100vh;
         float: left;
     }
 
@@ -5590,6 +5592,7 @@ textarea.form-control {
     .burger-menu .navbar-nav:after {
         display: table;
         content: " ";
+        background-color: #fff;
     }
     .nav-open .burger-menu .navbar-collapse.collapse {
         -webkit-transform: translate3d(0px, 0, 0);

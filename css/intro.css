@@ -50,10 +50,10 @@ main.flex__col {
 
 .menu {
     position: fixed;
-    z-index: 999;
+    z-index: 3;
     top: 0;
     left: 50%;
-    width: calc(100% - 80px);
+    width: 100%;
     justify-content: space-between;
     margin: 40px 0;
     transform: translatex(-50%);
@@ -266,10 +266,12 @@ main.flex__col {
         --fontSizeP: 11px;
     }
     .menu {
-        width: 90vw;
-        margin: 4vw 0;
+        width: 100vw;
+        margin: 0 0;
     }
     .menu ul {
         gap: 0 2vw;
     }
 }
+
+/* Icons */
