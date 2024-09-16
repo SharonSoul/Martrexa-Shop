@@ -18,12 +18,14 @@ https://codepen.io/Tiopayo/pen/KKGVWWz */
     --fontSizeP: 1.48vw;
     --maxWidth: 1100px;
 }
+
 body {
     margin: 0;
     font-family: var(--font1);
     background-color: #000;
     color: #fff;
     overflow-x: hidden;
+    width: 100%;
 }
 
 .flex,
@@ -35,6 +37,13 @@ body {
 
 .flex__col {
     flex-direction: column;
+}
+
+.hero_new {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
 ul {
@@ -118,7 +127,7 @@ main.flex__col {
 
 .clip {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 
@@ -265,10 +274,12 @@ main.flex__col {
         --fontSizeMenu: 11px;
         --fontSizeP: 11px;
     }
+
     .menu {
         width: 100vw;
         margin: 0 0;
     }
+
     .menu ul {
         gap: 0 2vw;
     }
