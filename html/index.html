@@ -4,11 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/hero.css">
     <link rel="stylesheet" href="/css/intro.css">
     <link rel="stylesheet" href="/css/productSlide.css">
-
+    <link rel="stylesheet" href="/css/miniSlider.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js"></script>
+    <script defer src="./../js/miniSlider.js"></script>
     <title>Martrexa</title>
 </head>
 
@@ -100,39 +105,142 @@
 
         <section class="slider-main">
             <div class="containerProd">
-                
-                <div class="slider-content-wrap"> 
+
+                <div class="slider-content-wrap">
                     <div class="logo">
                         <a href="#"><img src="https://www.yudiz.com/codepen/headphone-slider/logo.svg" alt="logo"></a>
-                    </div>               
+                    </div>
                     <div class="slider-content">
                         <h2 class="heading-style-2">Apple AirPods Max Wireless Over-Ear Headphones.</h2>
-                        <p>Active Noise Cancelling, Transparency Mode, Spatial Audio, Digital Crown for Volume Control. Bluetooth Headphones for iPhone </p>
+                        <p>Active Noise Cancelling, Transparency Mode, Spatial Audio, Digital Crown for Volume Control.
+                            Bluetooth Headphones for iPhone </p>
                         <h3 class="heading-style-2">$779.99</h3>
                         <div class="social-icons">
-                            <a href="#"><img src="https://www.yudiz.com/codepen/headphone-slider/instagram-icon.svg" alt="instagram"></a>
-                            <a href="#"><img src="https://www.yudiz.com/codepen/headphone-slider/facbook-icon.svg" alt="facebook"></a>
-                            <a href="#"><img src="https://www.yudiz.com/codepen/headphone-slider/twiter-icon.svg" alt="twitter"></a>
+                            <a href="#"><img src="https://www.yudiz.com/codepen/headphone-slider/instagram-icon.svg"
+                                    alt="instagram"></a>
+                            <a href="#"><img src="https://www.yudiz.com/codepen/headphone-slider/facbook-icon.svg"
+                                    alt="facebook"></a>
+                            <a href="#"><img src="https://www.yudiz.com/codepen/headphone-slider/twiter-icon.svg"
+                                    alt="twitter"></a>
                         </div>
-                    </div>               
-                </div>         
+                    </div>
+                </div>
             </div>
-            <div class="slider-images">       
-                <img class="slider-image" src="https://www.yudiz.com/codepen/headphone-slider/green.png" alt="headphone image">        
-                <img class="slider-image" src="https://www.yudiz.com/codepen/headphone-slider/blue.png" alt="headphone image">        
-                <img class="slider-image" src="https://www.yudiz.com/codepen/headphone-slider/red.png" alt="headphone image">        
-                <img class="slider-image" src="https://www.yudiz.com/codepen/headphone-slider/white.png" alt="headphone image">        
-                <img class="slider-image" src="https://www.yudiz.com/codepen/headphone-slider/black.png" alt="headphone image">        
-            </div> 
+            <div class="slider-images">
+                <img class="slider-image" src="https://www.yudiz.com/codepen/headphone-slider/green.png"
+                    alt="headphone image">
+                <img class="slider-image" src="https://www.yudiz.com/codepen/headphone-slider/blue.png"
+                    alt="headphone image">
+                <img class="slider-image" src="https://www.yudiz.com/codepen/headphone-slider/red.png"
+                    alt="headphone image">
+                <img class="slider-image" src="https://www.yudiz.com/codepen/headphone-slider/white.png"
+                    alt="headphone image">
+                <img class="slider-image" src="https://www.yudiz.com/codepen/headphone-slider/black.png"
+                    alt="headphone image">
+            </div>
             <div id="backgrounds">
-                <div class="background" style="background: radial-gradient(50% 50% at 50% 50%, #C7F6D0 0%, #7CB686 92.19%);"></div>
-                <div class="background" style="background: radial-gradient(50% 50% at 50% 50%, #D1E4F6 0%, #5F9CCF 100%);"></div>
-                <div class="background" style="background: radial-gradient(50% 50% at 50% 50%, #FFB7B2 0%, #ED746E 100%);"></div>
-                <div class="background" style="background: radial-gradient(50% 50% at 50% 50%, #D7D7D7 0%, #979797 100%);"></div>
-                <div class="background" style="background: radial-gradient(50% 50% at 50% 50%, #6B6B6B 0%, #292929 100%);"></div>
+                <div class="background"
+                    style="background: radial-gradient(50% 50% at 50% 50%, #C7F6D0 0%, #7CB686 92.19%);"></div>
+                <div class="background"
+                    style="background: radial-gradient(50% 50% at 50% 50%, #D1E4F6 0%, #5F9CCF 100%);"></div>
+                <div class="background"
+                    style="background: radial-gradient(50% 50% at 50% 50%, #FFB7B2 0%, #ED746E 100%);"></div>
+                <div class="background"
+                    style="background: radial-gradient(50% 50% at 50% 50%, #D7D7D7 0%, #979797 100%);"></div>
+                <div class="background"
+                    style="background: radial-gradient(50% 50% at 50% 50%, #6B6B6B 0%, #292929 100%);"></div>
             </div>
-        </section>   
-        
+        </section>
+
+        <section class="section__slider">
+            <div class="container__center">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__block">
+                                <div class="swiper-slide__block__img" data-swiper-parallax-y="70%">
+                                    <a target="_blank" href="#">
+                                        <img src="https://images.unsplash.com/photo-1456518563096-0ff5ee08204e?auto=format&amp;fit=crop&amp;w=1351&amp;q=60&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide__block__text">
+                                    <p data-swiper-parallax-x="-60%" class="main__title">Slider
+                                        <br>One
+                                        <span>.</span>
+                                    </p>
+                                    <h3 data-swiper-parallax-x="-50%" class="main__subtitle">Tagline
+                                        <span> • 2017</span>
+                                    </h3>
+                                    <p data-swiper-parallax-x="-40%" class="paragraphe">Lorem Ipsum is simply dummy text
+                                        of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                        standard dummy text.</p>
+                                    <a data-swiper-parallax-x="-30%" class="link" target="_blank" href="#">Discover</a>
+                                    <span data-swiper-parallax-y="60%" class="number">1</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__block">
+                                <div class="swiper-slide__block__img" data-swiper-parallax-y="70%">
+                                    <a target="_blank" href="#">
+                                        <img src="https://images.unsplash.com/photo-1510709657750-f5a80fc8da9c?auto=format&amp;fit=crop&amp;w=1950&amp;q=60&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide__block__text">
+                                    <h2 data-swiper-parallax-x="-60%" class="main__title">Slider
+                                        <br>Two
+                                        <span>.</span>
+                                    </h2>
+                                    <h3 data-swiper-parallax-x="-50%" class="main__subtitle">Tagline
+                                        <span>• 2017</span>
+                                    </h3>
+                                    <p data-swiper-parallax-x="-40%" class="paragraphe">Lorem Ipsum is simply dummy text
+                                        of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                        standard dummy text.</p>
+                                    <a data-swiper-parallax-x="-30%" style="z-index: 5;" class="link" target="_blank"
+                                        href="#">Discover</a>
+                                    <span data-swiper-parallax-y="60%" class="number">2</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__block">
+                                <div class="swiper-slide__block__img" data-swiper-parallax-y="70%">
+                                    <a target="_blank" href="#">
+                                        <img src="https://images.unsplash.com/photo-1505567745926-ba89000d255a?auto=format&amp;fit=crop&amp;w=1951&amp;q=60&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide__block__text">
+                                    <h2 data-swiper-parallax-x="-60%" class="main__title">Slider
+                                        <br>Three
+                                        <span>.</span>
+                                    </h2>
+                                    <h3 data-swiper-parallax-x="-50%" class="main__subtitle">Tagline
+                                        <span>• 2017</span>
+                                    </h3>
+                                    <p data-swiper-parallax-x="-40%" class="paragraphe">Lorem Ipsum is simply dummy text
+                                        of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                        standard dummy text.</p>
+                                    <a data-swiper-parallax-x="-30%" class="link" target="_blank" href="#">Discover</a>
+                                    <span data-swiper-parallax-y="60%" class="number">3</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-next">
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
     <div class="cursor flex">Hello</div>
     <div class="noise"></div>
@@ -142,6 +250,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
     <script src="/js/hero.js"></script>
     <script src="/js/productSlide.js"></script>
+    <script src="/js/miniSlider.js"></script>
     <script src="/js/main.js"></script>
 </body>
 

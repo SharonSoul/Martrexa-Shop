@@ -1,15 +1,6 @@
-/* author: https://codepen.io/yudizsolutions/pen/PoLJQOa
-Yudiz Solutions Limited */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 html {
     overflow-x: hidden;
+    min-width: 100%;
 }
 
 img {
@@ -19,7 +10,7 @@ img {
 body {
     overflow-x: hidden;
     position: relative;
-    height: 100svh;
+    min-width: 100%;
 }
 
 a {
@@ -55,7 +46,9 @@ p {
 }
 
 .slider-main {
-    min-height: 700px;
+
+    min-height: 100vh;
+    min-width: 100%;
     background: radial-gradient(50% 50% at 50% 50%, #C7F6D0 0%, #7CB686 92.19%);
     display: flex;
     justify-content: space-between;
@@ -63,7 +56,6 @@ p {
     height: 100%;
     overflow: hidden;
     position: relative;
-    width: 100%;
     z-index: 1;
 }
 
@@ -87,12 +79,10 @@ p {
 
 .containerProd {
     position: relative;
-    left: calc(50% - (1140px/2));
-    width: 50%;
     padding-block: 100px;
-    min-width: 10%;
-    max-width: 525px;
+    max-width: 50%;
     height: 100%;
+    padding: 20px 50px;
 }
 
 /* content */
@@ -101,6 +91,7 @@ p {
     flex-direction: column;
     justify-content: center;
     height: 100%;
+
 }
 
 /* social media */
@@ -185,6 +176,7 @@ p {
     min-height: 320px;
 }
 
+
 /* ========================= media query ============================== */
 @media screen and (max-width: 1199px) {
     .logo a img {
@@ -197,6 +189,18 @@ p {
         margin-bottom: 30px;
     }
 
+    .slider-main {
+        min-height: 700px;
+        background: radial-gradient(50% 50% at 50% 50%, #C7F6D0 0%, #7CB686 92.19%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+    }
+
     p {
         font-size: 17px;
         line-height: 28px;
@@ -207,6 +211,13 @@ p {
         left: calc(50% - (920px/2));
         padding-block: 80px;
         max-width: 475px;
+        position: relative;
+        left: calc(50% - (1140px/2));
+        width: 50%;
+        padding-block: 100px;
+        max-width: 525px;
+        height: 100%;
+        padding: 20px 50px;
     }
 
     .slider-images>img {
@@ -243,6 +254,19 @@ p {
         width: 45%;
     }
 
+    .slider-main {
+        min-height: 700px;
+        background: radial-gradient(50% 50% at 50% 50%, #C7F6D0 0%, #7CB686 92.19%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        min-width: 100%;
+    }
+
     .slider-images>img {
         width: 340px;
         aspect-ratio: 1/1.3;
@@ -261,6 +285,16 @@ p {
     .slider-main {
         flex-direction: column;
         min-height: 900px;
+        min-height: 700px;
+        background: radial-gradient(50% 50% at 50% 50%, #C7F6D0 0%, #7CB686 92.19%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        min-width: 100%;
     }
 
     .social-icons a {
